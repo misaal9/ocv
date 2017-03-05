@@ -3,15 +3,31 @@ import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import Divider from 'material-ui/Divider';
+import { Link} from 'react-router';
 import _ from 'lodash';
 
 const style = {
     appBar: {
-        //background: 'transparent',
-        color: '#ccc'
+        background: 'transparent',
+        position: 'fixed',
+        top: 0,
+        color: '#ccc',
+        boxShadow: 'none'
     },
     indent: {
-        paddingLeft: '40px'
+        paddingLeft: '40px',
+        color: '#fff'
+    },
+    link: {
+        textDecoration: 'none'
+    },
+    drawer: {
+        background: '#000',
+        height: '100%',
+        borderRight: '2px dashed yellow'
+    },
+    menuItem: {
+        color: '#fff'
     }
 };
 
@@ -31,17 +47,18 @@ class Header extends Component {
     
     renderMenuItems() {
         return (
-            <div>
-                <MenuItem>See All Sections Together</MenuItem>
-                <MenuItem style={style.indent}>About Me</MenuItem>
-                <MenuItem style={style.indent}>Projects</MenuItem>
-                <MenuItem style={style.indent}>Past Work Experience</MenuItem>
-                <MenuItem style={style.indent}>Primary Skillset</MenuItem>
-                <MenuItem style={style.indent}>Secondary SkillSet</MenuItem>
-                <MenuItem style={style.indent}>Others</MenuItem>
+            <div style={style.drawer}>
+                <Link style={style.link} to='/details'><MenuItem style={style.menuItem}>See All Sections Together</MenuItem></Link>
+                <MenuItem style={style.menuItem} style={style.indent}>About Me</MenuItem>
+                <MenuItem style={style.menuItem} style={style.indent}>Projects</MenuItem>
+                <MenuItem style={style.menuItem} style={style.indent}>Past Work Experience</MenuItem>
+                <MenuItem style={style.menuItem} style={style.indent}>Primary Skillset</MenuItem>
+                <MenuItem style={style.menuItem} style={style.indent}>Secondary SkillSet</MenuItem>
+                <MenuItem style={style.menuItem} style={style.indent}>Others</MenuItem>
                 <Divider />
-                <MenuItem>About This Project</MenuItem>
-                <MenuItem>Contact Me</MenuItem>
+                <MenuItem style={style.menuItem}>About This Project</MenuItem>
+                <MenuItem style={style.menuItem}>Contact Me</MenuItem>
+                {this.props.children}
             </div>
         );
     }
@@ -54,7 +71,7 @@ class Header extends Component {
                     iconClassNameRight="muidocs-icon-navigation-expand-more"
                     onLeftIconButtonTouchTap={this.handleDrawerToggle.bind(this)}
                 />
-                <Drawer 
+                <Drawer
                     docked={false}
                     open={this.state.drawerOpen}
                     onRequestChange={(drawerOpen) => this.setState({drawerOpen})}
