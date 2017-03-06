@@ -26,7 +26,8 @@ const style = {
         maxHeight: '200px',
         margin: '0 auto',
         padding: '20px',
-        boxShadow: 'none'
+        boxShadow: 'none',
+        fontFamily: 'Roboto'
     }
 };
 class Intro extends Component {
@@ -38,6 +39,7 @@ class Intro extends Component {
                     <Paper style={style.paper}>
                         <div><img src={imgSrc} role='presenttion' /></div>
                         <h1>A JAVASCRIPT DEVELOPER</h1>
+                        <div>In the ever evolving world of Web Developement, I consider myself a </div>
                     </Paper>
                 </Paper>
             </div>

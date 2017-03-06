@@ -24,10 +24,15 @@ const style = {
     drawer: {
         background: '#000',
         height: '100%',
-        borderRight: '2px dashed yellow'
+        borderRight: '2px dashed yellow',
+        color: '#fff'
     },
     menuItem: {
         color: '#fff'
+    },
+    indentedLinkMenuItem: {
+        color: '#fff',
+        paddingLeft: '40px'
     }
 };
 
@@ -48,12 +53,12 @@ class Header extends Component {
     renderMenuItems() {
         return (
             <div style={style.drawer}>
-                <Link style={style.link} to='/details'><MenuItem style={style.menuItem}>See All Sections Together</MenuItem></Link>
+                <Link style={style.link} to='/'><MenuItem style={style.menuItem}>Home Page</MenuItem></Link>
                 <MenuItem style={style.menuItem} style={style.indent}>About Me</MenuItem>
                 <MenuItem style={style.menuItem} style={style.indent}>Projects</MenuItem>
                 <MenuItem style={style.menuItem} style={style.indent}>Past Work Experience</MenuItem>
-                <MenuItem style={style.menuItem} style={style.indent}>Primary Skillset</MenuItem>
-                <MenuItem style={style.menuItem} style={style.indent}>Secondary SkillSet</MenuItem>
+                <Link style={style.link} to='/primSkills'><MenuItem style={style.indentedLinkMenuItem}>Primary SKills</MenuItem></Link>
+                <Link style={style.link} to='/secSkills'><MenuItem style={style.indentedLinkMenuItem}>Secondary SKills</MenuItem></Link>
                 <MenuItem style={style.menuItem} style={style.indent}>Others</MenuItem>
                 <Divider />
                 <MenuItem style={style.menuItem}>About This Project</MenuItem>
