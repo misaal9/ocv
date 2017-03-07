@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
-import Divider from 'material-ui/Divider';
 import { Link} from 'react-router';
 import _ from 'lodash';
 
@@ -70,15 +69,16 @@ class Header extends Component {
     renderMenuItems() {
         return (
             <div style={style.drawerHolder}>
+                {/*eslint-disable react/jsx-no-duplicate-props*/}
                 <Link style={style.link} to='/'><MenuItem style={style.menuItem}>Home Page</MenuItem></Link>
-                <MenuItem style={style.menuItem} style={style.indent}>About Me</MenuItem>
-                <MenuItem style={style.menuItem} style={style.indent}>Projects</MenuItem>
-                <MenuItem style={style.menuItem} style={style.indent}>Past Work Experience</MenuItem>
+                <Link style={style.link} to='/about'><MenuItem style={style.menuItem} style={style.indent}>About Me</MenuItem></Link>
+                <Link style={style.link} to='/projects'><MenuItem style={style.menuItem} style={style.indent}>Projects</MenuItem></Link>
+                <Link style={style.link} to='/work'><MenuItem style={style.menuItem} style={style.indent}>Past Work Experience</MenuItem></Link>
                 <Link style={style.link} to='/primSkills'><MenuItem style={style.indentedLinkMenuItem}>Primary SKills</MenuItem></Link>
                 <Link style={style.link} to='/secSkills'><MenuItem style={style.indentedLinkMenuItem}>Secondary SKills</MenuItem></Link>
-                <MenuItem style={style.menuItem} style={style.indent}>Others</MenuItem>
-                <MenuItem style={style.menuItem}>About This Project</MenuItem>
-                <MenuItem style={style.menuItem}>Contact Me</MenuItem>
+                <Link style={style.link} to='/next'><MenuItem style={style.menuItem} style={style.indent}>Anything else?</MenuItem></Link>
+                <Link style={style.link} to='/this'><MenuItem style={style.menuItem}>About This Project</MenuItem></Link>
+                <Link style={style.link} to='/contact'><MenuItem style={style.menuItem}>Contact Me</MenuItem></Link>
                 {this.props.children}
             </div>
         );
