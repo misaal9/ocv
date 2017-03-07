@@ -16,23 +16,40 @@ const style = {
     },
     indent: {
         paddingLeft: '40px',
-        color: '#fff'
+        color: '#333',
+        fontFamily: 'Gloria Hallelujah',
+        fontSize: '1.5em'
     },
     link: {
-        textDecoration: 'none'
+        textDecoration: 'none',
+        fontFamily: 'Gloria Hallelujah',
+        fontSize: '1em'
     },
-    drawer: {
-        background: '#000',
-        height: '100%',
-        borderRight: '2px dashed yellow',
-        color: '#fff'
+    drawerContainer: {
+        backgroundColor: 'none',
+        boxShadow: 'none'
+    },
+    drawerHolder: {
+        background: 'yellow',
+        height: 'auto',
+        borderRadius: '20% 40% 82%',
+        color: '#000',
+        width: '350px',
+        paddingTop: '30px',
+        paddingLeft: '20px',
+        paddingBottom: '100px',
+        overflow: 'hidden'
     },
     menuItem: {
-        color: '#fff'
+        color: '#333',
+        fontFamily: 'Gloria Hallelujah',
+        fontSize: '1.5em'
     },
     indentedLinkMenuItem: {
-        color: '#fff',
-        paddingLeft: '40px'
+        color: '#333',
+        paddingLeft: '40px',
+        fontFamily: 'Gloria Hallelujah',
+        fontSize: '1.5em'
     }
 };
 
@@ -52,7 +69,7 @@ class Header extends Component {
     
     renderMenuItems() {
         return (
-            <div style={style.drawer}>
+            <div style={style.drawerHolder}>
                 <Link style={style.link} to='/'><MenuItem style={style.menuItem}>Home Page</MenuItem></Link>
                 <MenuItem style={style.menuItem} style={style.indent}>About Me</MenuItem>
                 <MenuItem style={style.menuItem} style={style.indent}>Projects</MenuItem>
@@ -60,7 +77,6 @@ class Header extends Component {
                 <Link style={style.link} to='/primSkills'><MenuItem style={style.indentedLinkMenuItem}>Primary SKills</MenuItem></Link>
                 <Link style={style.link} to='/secSkills'><MenuItem style={style.indentedLinkMenuItem}>Secondary SKills</MenuItem></Link>
                 <MenuItem style={style.menuItem} style={style.indent}>Others</MenuItem>
-                <Divider />
                 <MenuItem style={style.menuItem}>About This Project</MenuItem>
                 <MenuItem style={style.menuItem}>Contact Me</MenuItem>
                 {this.props.children}
@@ -77,6 +93,8 @@ class Header extends Component {
                     onLeftIconButtonTouchTap={this.handleDrawerToggle.bind(this)}
                 />
                 <Drawer
+                    width={400}
+                    containerStyle={style.drawerContainer}
                     docked={false}
                     open={this.state.drawerOpen}
                     onRequestChange={(drawerOpen) => this.setState({drawerOpen})}
