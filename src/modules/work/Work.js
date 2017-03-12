@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../../modules/header/Header';
 import Paper from 'material-ui/Paper';
+import WorkExp from './components/WorkExp';
 
 const style = {
     paperMain: {
@@ -35,7 +36,7 @@ class Intro extends Component {
                 <Header />
                 <Paper style={style.paperMain}>
                     <Paper style={style.paper}>
-                        Work Experience
+                        <WorkExp />
                     </Paper>
                 </Paper>
             </div>
