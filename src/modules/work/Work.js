@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../../modules/header/Header';
 import Paper from 'material-ui/Paper';
 import WorkExp from './components/WorkExp';
+import _ from 'lodash';
 
 const style = {
     paperMain: {
@@ -29,16 +30,81 @@ const style = {
         fontFamily: 'Roboto'
     }
 };
+
+const workExp = [{
+    id: 'qnst',
+    img: 'https://www.ggvc.com/sites/default/files/styles/company_--_single/public/quinstreet_trans.png',
+    text: { 
+        title: 'Quinstreet',
+        subTitle: '2015 - Present (~2 years)',
+        content: 'Tata Consultancy Servies, or TCS, marked the beginning of my career. My initial days kept me busy with Java, however I soon began pursuing JavaScript related web developement roles.'
+    }
+},
+{
+    id: 'sns',
+    img: 'http://www.forgeahead.io/wp-content/uploads/2014/07/logo_desktop.png',
+    text: { 
+        title: 'SNS Technologies (now ForgeAhead)',
+        subTitle: '2013 - 2014 (2 years)',
+        content: 'Tata Consultancy Servies, or TCS, marked the beginning of my career. My initial days kept me busy with Java, however I soon began pursuing JavaScript related web developement roles.'
+    }
+},
+{
+    id: 'tcs',
+    img: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b1/Tata_Consultancy_Services_Logo.svg/1280px-Tata_Consultancy_Services_Logo.svg.png',
+    text: { 
+        title: 'Tata Consultancy Services',
+        subTitle: '2009 - 2013 (~4 years)',
+        content: 'Tata Consultancy Servies, or TCS, marked the beginning of my career. My initial days kept me busy with Java, however I soon began pursuing JavaScript related web developement roles.'
+    }
+}];
 class Intro extends Component {
+    
+    constructor(props) {
+        super(props);
+
+        this.state = {workExp};
+    }
+    
+    renderWorkExpDetails() {
+        return (
+            <div>
+                {this.state.workExp.map((work, i) => (
+                    <Paper key={i} style={style.paperMain}>
+                        <Paper style={style.paper}>
+                            <WorkExp title={work.text.title} subtitle={work.text.subTitle} imgLogo={work.img} content={work.text.content}/>
+                        </Paper>
+                    </Paper>
+                 ))}
+            </div>
+        );
+    }
+    
     render() {
         return (
             <div>
                 <Header />
+                {this.renderWorkExpDetails()}
+                {/*<Paper style={style.paperMain}>
+                    <Paper style={style.paper}>
+                        <WorkExp />
+                    </Paper>
+                </Paper>
                 <Paper style={style.paperMain}>
                     <Paper style={style.paper}>
                         <WorkExp />
                     </Paper>
                 </Paper>
+                <Paper style={style.paperMain}>
+                    <Paper style={style.paper}>
+                        <WorkExp />
+                    </Paper>
+                </Paper>
+                <Paper style={style.paperMain}>
+                    <Paper style={style.paper}>
+                        <WorkExp />
+                    </Paper>
+                </Paper>*/}
             </div>
         );
     }

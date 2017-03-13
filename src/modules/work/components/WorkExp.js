@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import {Card, CardHeader, CardMedia, CardText, CardActions, CardTitle} from 'material-ui/Card';
 import RaisedButton from 'material-ui/RaisedButton';
-import Toggle from 'material-ui/Toggle';
-
-const tataLogo = 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b1/Tata_Consultancy_Services_Logo.svg/1280px-Tata_Consultancy_Services_Logo.svg.png';
 
 const style = {
     wrapper: {
@@ -25,28 +22,31 @@ const style = {
         textAlign: 'center'
     }
 }
+
+const label = 'Show Project Details';
+
 class WorkExp extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            openTcs: false
+            expand: false
         }
     }
 
     handleExpandChange = (expanded) => {
-        this.setState({openTcs: expanded});
+        this.setState({expand: expanded});
     };
 
     handleToggle = (event, toggle) => {
-        this.setState({openTcs: toggle});
+        this.setState({expand: toggle});
     };
 
     handleExpand = () => {
-        this.setState({openTcs: true});
+        this.setState({expand: true});
     };
 
     handleReduce = () => {
-        this.setState({openTcs: false});
+        this.setState({expand: false});
     };
 
     render() {
@@ -55,14 +55,14 @@ class WorkExp extends Component {
                 <Card style={style.card} expanded={this.state.openSns} onExpandChange={this.handleExpandChange}>
                     <CardHeader showExpandableButton={true} actAsExpander={true} />
                     <CardMedia style={style.cardMedia}>
-                        <img style={style.img} src={tataLogo} />
+                        <img role="presentation" style={style.img} src={this.props.imgLogo} />
                     </CardMedia>
-                    <CardTitle style={style.titles} title="Tata Consultancy Services" subtitle="2009 - 2013 (~4 years)" />
-                    <CardText style={style.text} expandable={true}>
-                        Tata Consultancy Servies, or TCS, marked the beginning of my career. My initial days kept me busy with Java, however I soon began pursuing JavaScript related web developement roles.
+                    <CardTitle style={style.titles} title={this.props.title} subtitle={this.props.subtitle} />
+                    <CardText style={style.text}>
+                        {this.props.content}
                     </CardText>
-                    <CardActions expandable={true}>
-                        <RaisedButton primary={true} fullWidth={true} label="Show Project Details" />
+                    <CardActions>
+                        <RaisedButton primary={true} fullWidth={true} label={label} />
                     </CardActions>
                 </Card>
             </div>
