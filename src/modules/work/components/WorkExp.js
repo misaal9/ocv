@@ -19,7 +19,9 @@ const style = {
         lineHeight: '1.4em'
     },
     titles: {
-        textAlign: 'center'
+        textAlign: 'center',
+        fontFamily: '"Gloria Hallelujah"',
+        fontSize: '2em'
     }
 }
 

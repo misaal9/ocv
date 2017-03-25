@@ -29,6 +29,10 @@ const style = {
     },
     userIcon: {
         width: '25vw'
+    },
+    title: {
+        fontFamily: '"Gloria Hallelujah"',
+        fontSize: '2em'
     }
 };
 class Intro extends Component {
@@ -39,7 +43,7 @@ class Intro extends Component {
                 <Paper style={style.paperMain}>
                     <Paper style={style.paper}>
                         <img src={userIcon} style={style.userIcon} role="presentation" />
-                        <h2>Rohit</h2>
+                        <h2 style={style.title}>Rohit</h2>
                         <p>
                             I'm a Mumbai-Pune based JavaScript developer. I specialise in FrontEnd technologies and frameworks,
                             and have recently been exploring other options in Javascript as well. This includes not just backend,

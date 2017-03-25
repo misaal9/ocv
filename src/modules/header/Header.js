@@ -3,6 +3,10 @@ import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import { Link} from 'react-router';
+import {blue500} from 'material-ui/styles/colors';
+import IconButton from 'material-ui/IconButton';
+import NavigationMenu from 'material-ui/svg-icons/navigation/menu';
+
 import _ from 'lodash';
 
 const style = {
@@ -32,6 +36,9 @@ const style = {
         paddingLeft: '20px',
         paddingBottom: '100px',
         overflow: 'hidden'
+    },
+    overlay: {
+        background: 'transparent'
     },
     menuItem: {
         color: '#333',
@@ -77,6 +84,7 @@ class Header extends Component {
                 <AppBar
                     style={style.appBar}
                     iconClassNameRight="muidocs-icon-navigation-expand-more"
+                    iconElementLeft={<IconButton><NavigationMenu color={blue500}/></IconButton>}
                     onLeftIconButtonTouchTap={this.handleDrawerToggle.bind(this)}
                 />
                 <Drawer
@@ -84,6 +92,7 @@ class Header extends Component {
                     containerStyle={style.drawerContainer}
                     docked={false}
                     open={this.state.drawerOpen}
+                    overlayStyle={style.overlay}
                     onRequestChange={(drawerOpen) => this.setState({drawerOpen})}
                 >
                     {this.renderMenuItems()}

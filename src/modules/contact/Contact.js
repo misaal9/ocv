@@ -33,6 +33,10 @@ const style = {
         padding: '20px',
         boxShadow: 'none',
         fontFamily: 'Roboto'
+    },
+    title: {
+        fontFamily: '"Gloria Hallelujah"',
+        fontSize: '2em'
     }
 };
 class Intro extends Component {
@@ -42,13 +46,16 @@ class Intro extends Component {
                 <Header />
                 <Paper style={style.paperMain}>
                     <Paper style={style.paper}>
-                        <h3>Looking To Get In Touch?</h3>
+                        <h2 style={style.title}>Looking To Get In Touch?</h2>
                         <TextField
                             hintText='Enter your name'
+                            fullWidth={true}
                         />
                         <TextField
                             hintText='Enter your email'
+                            fullWidth={true}
                         />
+                        <p>&nbsp;</p>
                         <RaisedButton label='Submit' primary={true} fullWidth={true} />
                     </Paper>
                 </Paper>
