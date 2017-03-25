@@ -9,7 +9,6 @@ import PrimSkills from './modules/skills/PrimSkills';
 import SecSkills from './modules/skills/SecSkills';
 import Projects from './modules/projects/Projects';
 import Next from './modules/next/Next';
-import This from './modules/this/This';
 import Contact from './modules/contact/Contact';
 import Work from './modules/work/Work';
 import ProjectDetails from './modules/work/companies/Details';
@@ -27,7 +26,6 @@ ReactDOM.render(
             <Route path='/primSkills' component={PrimSkills} />
             <Route path='/secSkills' component={SecSkills} />
             <Route path='/next' component={Next} />
-            <Route path='/this' component={This} />
             <Route path='/contact' component={Contact} />
             <Route path='/projectDetails' component={ProjectDetails} />
         </Router>

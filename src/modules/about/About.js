@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Header from '../../modules/header/Header';
 import Paper from 'material-ui/Paper';
 
+const userIcon = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Antu_im-kick-user.svg/2000px-Antu_im-kick-user.svg.png';
+
 const style = {
     paperMain: {
         display: 'flex',
@@ -24,6 +26,9 @@ const style = {
         padding: '20px',
         boxShadow: 'none',
         fontFamily: 'Roboto'
+    },
+    userIcon: {
+        width: '25vw'
     }
 };
 class Intro extends Component {
@@ -33,7 +38,18 @@ class Intro extends Component {
                 <Header />
                 <Paper style={style.paperMain}>
                     <Paper style={style.paper}>
-                        About Me
+                        <img src={userIcon} style={style.userIcon} role="presentation" />
+                        <h2>Rohit</h2>
+                        <p>
+                            I'm a Mumbai-Pune based JavaScript developer. I specialise in FrontEnd technologies and frameworks,
+                            and have recently been exploring other options in Javascript as well. This includes not just backend,
+                            but also mobile apps, plugins and games using Javascript mostly.
+                        </p>
+                        <p>
+                            Apart from my interest in Javascript, I have an active intereset in UI design, analyse and better UX flows, 
+                            animations and 3D-modelling, designing 2D games and also exploring scope of Javascript in 
+                            hardware related programming.
+                        </p>
                     </Paper>
                 </Paper>
             </div>

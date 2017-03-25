@@ -13,12 +13,6 @@ const style = {
         color: '#ccc',
         boxShadow: 'none'
     },
-    indent: {
-        paddingLeft: '40px',
-        color: '#333',
-        fontFamily: 'Gloria Hallelujah',
-        fontSize: '1.2em'
-    },
     link: {
         textDecoration: 'none',
         fontFamily: 'Gloria Hallelujah',
@@ -43,12 +37,6 @@ const style = {
         color: '#333',
         fontFamily: 'Gloria Hallelujah',
         fontSize: '1.2em'
-    },
-    indentedLinkMenuItem: {
-        color: '#333',
-        paddingLeft: '40px',
-        fontFamily: 'Gloria Hallelujah',
-        fontSize: '1.2em'
     }
 };
 
@@ -71,13 +59,12 @@ class Header extends Component {
             <div style={style.drawerHolder}>
                 {/*eslint-disable react/jsx-no-duplicate-props*/}
                 <Link style={style.link} to='/'><MenuItem style={style.menuItem}>Home Page</MenuItem></Link>
-                <Link style={style.link} to='/about'><MenuItem style={style.menuItem} style={style.indent}>About Me</MenuItem></Link>
-                <Link style={style.link} to='/projects'><MenuItem style={style.menuItem} style={style.indent}>Projects</MenuItem></Link>
-                <Link style={style.link} to='/work'><MenuItem style={style.menuItem} style={style.indent}>Past Work Experience</MenuItem></Link>
-                <Link style={style.link} to='/primSkills'><MenuItem style={style.indentedLinkMenuItem}>Primary SKills</MenuItem></Link>
-                <Link style={style.link} to='/secSkills'><MenuItem style={style.indentedLinkMenuItem}>Secondary SKills</MenuItem></Link>
-                <Link style={style.link} to='/next'><MenuItem style={style.menuItem} style={style.indent}>Anything else?</MenuItem></Link>
-                <Link style={style.link} to='/this'><MenuItem style={style.menuItem}>About This Project</MenuItem></Link>
+                <Link style={style.link} to='/about'><MenuItem style={style.menuItem}>About Me</MenuItem></Link>
+                <Link style={style.link} to='/projects'><MenuItem style={style.menuItem}>Projects</MenuItem></Link>
+                <Link style={style.link} to='/work'><MenuItem style={style.menuItem}>Past Work Experience</MenuItem></Link>
+                <Link style={style.link} to='/primSkills'><MenuItem style={style.menuItem}>Primary SKills</MenuItem></Link>
+                <Link style={style.link} to='/secSkills'><MenuItem style={style.menuItem}>Secondary SKills</MenuItem></Link>
+                <Link style={style.link} to='/next'><MenuItem style={style.menuItem}>Other Interests</MenuItem></Link>
                 <Link style={style.link} to='/contact'><MenuItem style={style.menuItem}>Contact Me</MenuItem></Link>
                 {this.props.children}
             </div>

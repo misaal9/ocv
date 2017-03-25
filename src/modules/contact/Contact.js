@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 import Header from '../../modules/header/Header';
 import Paper from 'material-ui/Paper';
+import TextField from 'material-ui/TextField';
+import RaisedButton from 'material-ui/RaisedButton';
+
+/*
+import FA from 'react-fontawesome';
+import FontIcon from 'material-ui/FontIcon';
+import {blue500, red500, greenA200} from 'material-ui/styles/colors';
+*/
+
 
 const style = {
     paperMain: {
@@ -33,7 +42,14 @@ class Intro extends Component {
                 <Header />
                 <Paper style={style.paperMain}>
                     <Paper style={style.paper}>
-                        Contact Me/ Details
+                        <h3>Looking To Get In Touch?</h3>
+                        <TextField
+                            hintText='Enter your name'
+                        />
+                        <TextField
+                            hintText='Enter your email'
+                        />
+                        <RaisedButton label='Submit' primary={true} fullWidth={true} />
                     </Paper>
                 </Paper>
             </div>
