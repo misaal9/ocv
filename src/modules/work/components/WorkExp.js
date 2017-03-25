@@ -62,7 +62,7 @@ class WorkExp extends Component {
                         {this.props.content}
                     </CardText>
                     <CardActions>
-                        <RaisedButton primary={true} fullWidth={true} label={label} />
+                        <RaisedButton href='/projectDetails' primary={true} fullWidth={true} label={label} />
                     </CardActions>
                 </Card>
             </div>

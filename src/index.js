@@ -12,6 +12,7 @@ import Next from './modules/next/Next';
 import This from './modules/this/This';
 import Contact from './modules/contact/Contact';
 import Work from './modules/work/Work';
+import ProjectDetails from './modules/work/companies/Details';
 import './index.css';
 
 injectTapEventPlugin();
@@ -28,6 +29,7 @@ ReactDOM.render(
             <Route path='/next' component={Next} />
             <Route path='/this' component={This} />
             <Route path='/contact' component={Contact} />
+            <Route path='/projectDetails' component={ProjectDetails} />
         </Router>
     </MuiThemeProvider>
     ,

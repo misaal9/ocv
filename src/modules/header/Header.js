@@ -17,7 +17,7 @@ const style = {
         paddingLeft: '40px',
         color: '#333',
         fontFamily: 'Gloria Hallelujah',
-        fontSize: '1.5em'
+        fontSize: '1.2em'
     },
     link: {
         textDecoration: 'none',
@@ -42,13 +42,13 @@ const style = {
     menuItem: {
         color: '#333',
         fontFamily: 'Gloria Hallelujah',
-        fontSize: '1.5em'
+        fontSize: '1.2em'
     },
     indentedLinkMenuItem: {
         color: '#333',
         paddingLeft: '40px',
         fontFamily: 'Gloria Hallelujah',
-        fontSize: '1.5em'
+        fontSize: '1.2em'
     }
 };
 
