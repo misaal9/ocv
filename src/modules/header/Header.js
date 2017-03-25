@@ -58,6 +58,7 @@ class Header extends Component {
     
     openHomePage() {
         //console.info('PPSDS');
+        console.info(this.props);
     }
     
     handleDrawerToggle() {
@@ -73,9 +74,9 @@ class Header extends Component {
                 <Link style={style.link} to='/'><MenuItem style={style.menuItem}>Home Page</MenuItem></Link>
                 <Link style={style.link} to='/about'><MenuItem style={style.menuItem}>About Me</MenuItem></Link>
                 <Link style={style.link} to='/projects'><MenuItem style={style.menuItem}>Projects</MenuItem></Link>
-                <Link style={style.link} to='/work'><MenuItem style={style.menuItem}>Past Work Experience</MenuItem></Link>
-                <Link style={style.link} to='/primSkills'><MenuItem style={style.menuItem}>Primary SKills</MenuItem></Link>
-                <Link style={style.link} to='/secSkills'><MenuItem style={style.menuItem}>Secondary SKills</MenuItem></Link>
+                <Link style={style.link} to='/work'><MenuItem style={style.menuItem}>Past Work Experience *</MenuItem></Link>
+                <Link style={style.link} to='/primSkills'><MenuItem style={style.menuItem}>Primary SKills *</MenuItem></Link>
+                <Link style={style.link} to='/secSkills'><MenuItem style={style.menuItem}>Summary Of All SKills *</MenuItem></Link>
                 <Link style={style.link} to='/next'><MenuItem style={style.menuItem}>Other Interests</MenuItem></Link>
                 <Link style={style.link} to='/contact'><MenuItem style={style.menuItem}>Contact Me</MenuItem></Link>
                 {this.props.children}

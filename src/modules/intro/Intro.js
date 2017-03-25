@@ -54,7 +54,7 @@ class Intro extends Component {
                     <Paper style={style.paper}>
                         <div style={style.imgHolder}><img src={imgSrc} style={style.img} role='presentation' /></div>
                         <h1 style={style.h1}>A Javascript Developer</h1>
-                        <div style={style.roman}>/ˈdʒɑːvəˌskrɪpt - dɪˈvɛləpə/ 1. A person who has been studying a new framework for the past 6 months only to find out it got outdated 2 weeks ago. 2. A person who has explained to somebody atleast once that JavaScript is not related to Java.</div>
+                        <div style={style.roman}>/ˈdʒɑːvəˌskrɪpt - dɪˈvɛləpə/ 1. A person who has been studying a new framework for the past 6 months only to find out it got outdated 2 weeks ago. 2. A person who has explained to somebody atleast once that JavaScript is not related to Java. 3. Me.</div>
                     </Paper>
                 </Paper>
             </div>

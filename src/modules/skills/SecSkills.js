@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../../modules/header/Header';
 import Paper from 'material-ui/Paper';
-import Pie2 from './components/Pie2';
-import Pie3 from './components/Pie3';
-import Pie4 from './components/Pie4';
 
 
 const style = {
@@ -24,7 +21,11 @@ const style = {
         padding: '20px',
         boxShadow: 'none',
         fontFamily: 'Roboto'
-    }
+    },
+    title: {
+        fontFamily: '"Gloria Hallelujah"',
+        fontSize: '2em'
+    },
 };
 
 class Details extends Component {
@@ -33,25 +34,7 @@ class Details extends Component {
             <div>
                 <Header />
                 <Paper style={style.paperMain}>
-                    <h2>My secondary skillset</h2>
-                    <h3>A blah blah on the blah blah way of Javascript blah blah React blah blah Angular arey wah blah blah too good ya</h3>
-                    <Paper style={style.chartHolder}>
-                        <Pie2 />
-                    </Paper>
-                </Paper>
-                <Paper style={style.paperMain}>
-                    <h2>My secondary skillset</h2>
-                    <h3>A blah blah on the blah blah way of Javascript blah blah React blah blah Angular arey wah blah blah too good ya</h3>
-                    <Paper style={style.chartHolder}>
-                        <Pie3 />
-                    </Paper>
-                </Paper>
-                <Paper style={style.paperMain}>
-                    <h2>My secondary skillset</h2>
-                    <h3>A blah blah on the blah blah way of Javascript blah blah React blah blah Angular arey wah blah blah too good ya</h3>
-                    <Paper style={style.chartHolder}>
-                        <Pie4 />
-                    </Paper>
+                    <h2 style={style.title}>Summary Of skill set</h2>
                 </Paper>
             </div>
         );

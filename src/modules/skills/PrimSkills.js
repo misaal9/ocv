@@ -3,6 +3,7 @@ import Header from '../../modules/header/Header';
 import Paper from 'material-ui/Paper';
 import PieFrameworks from './components/PieFrameworks';
 import PieUtility from './components/PieUtility';
+import NavigationScrollDown from 'material-ui/svg-icons/navigation/expand-more';
 
 const style = {
     paperMain: {
@@ -42,6 +43,7 @@ class Details extends Component {
                         <h2 style={style.titleHeader}>My primary skillset</h2>
                         <p>The following charts give an idea of my level of proficiency in the mentioned frameworks/ tools. I have rated my level on a scale of 1 to 10, 10 being the highest.</p>
                         <p style={style.topSpacer}>Scroll down</p>
+                        <NavigationScrollDown />
                     </Paper>
                 </Paper>
                 <Paper style={style.paperMain}>
