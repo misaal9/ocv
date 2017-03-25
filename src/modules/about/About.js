@@ -32,7 +32,9 @@ const style = {
     },
     title: {
         fontFamily: '"Gloria Hallelujah"',
-        fontSize: '2em'
+        fontSize: '2em',
+        lineHeight: '1.5em',
+        textAlign: 'center'
     }
 };
 class Intro extends Component {

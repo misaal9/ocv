@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import Header from '../../modules/header/Header';
 import Paper from 'material-ui/Paper';
-import Pie from './components/Pie';
-import Pie2 from './components/Pie2';
-import Pie3 from './components/Pie3';
-import Pie4 from './components/Pie4';
-
+import PieFrameworks from './components/PieFrameworks';
+import PieUtility from './components/PieUtility';
 
 const style = {
     paperMain: {
@@ -15,7 +12,6 @@ const style = {
         alignContent: 'center',
         padding: '20px',
         height: '100vh',
-        color: '#fff',
         textAlign: 'center'
     },
     chartHolder: {
@@ -26,6 +22,13 @@ const style = {
         padding: '20px',
         boxShadow: 'none',
         fontFamily: 'Roboto'
+    },
+    titleHeader: {
+        fontFamily: '"Gloria Hallelujah"',
+        fontSize: '2em'
+    },
+    topSpacer: {
+        marginTop: '100px'
     }
 };
 
@@ -35,31 +38,22 @@ class Details extends Component {
             <div>
                 <Header />
                 <Paper style={style.paperMain}>
-                    <h2>My primary skillset</h2>
-                    <h3>A blah blah on the blah blah way of Javascript blah blah React blah blah Angular arey wah blah blah too good ya</h3>
                     <Paper style={style.chartHolder}>
-                        <Pie />
+                        <h2 style={style.titleHeader}>My primary skillset</h2>
+                        <p>The following charts give an idea of my level of proficiency in the mentioned frameworks/ tools. I have rated my level on a scale of 1 to 10, 10 being the highest.</p>
+                        <p style={style.topSpacer}>Scroll down</p>
                     </Paper>
                 </Paper>
                 <Paper style={style.paperMain}>
-                    <h2>My primary skillset</h2>
-                    <h3>A blah blah on the blah blah way of Javascript blah blah React blah blah Angular arey wah blah blah too good ya</h3>
+                    <h2 style={style.titleHeader}>Javascript UI Frameworks</h2>
                     <Paper style={style.chartHolder}>
-                        <Pie2 />
+                        <PieFrameworks />
                     </Paper>
                 </Paper>
                 <Paper style={style.paperMain}>
-                    <h2>My primary skillset</h2>
-                    <h3>A blah blah on the blah blah way of Javascript blah blah React blah blah Angular arey wah blah blah too good ya</h3>
+                    <h2 style={style.titleHeader}>Utility Libraries</h2>
                     <Paper style={style.chartHolder}>
-                        <Pie3 />
-                    </Paper>
-                </Paper>
-                <Paper style={style.paperMain}>
-                    <h2>My primary skillset</h2>
-                    <h3>A blah blah on the blah blah way of Javascript blah blah React blah blah Angular arey wah blah blah too good ya</h3>
-                    <Paper style={style.chartHolder}>
-                        <Pie4 />
+                        <PieUtility />
                     </Paper>
                 </Paper>
             </div>

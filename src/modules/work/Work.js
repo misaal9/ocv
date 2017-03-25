@@ -31,7 +31,7 @@ const style = {
 
 const workExp = [{
     id: 'qnst',
-    img: 'https://www.ggvc.com/sites/default/files/styles/company_--_single/public/quinstreet_trans.png',
+    img: 'http://www.mhrenovate.com/samsclub2015/aboutus/images/Quinstreet-Logo.jpg',
     text: { 
         title: 'Quinstreet',
         subTitle: '2015 - Present (~2 years)',

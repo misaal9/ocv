@@ -33,7 +33,9 @@ const style = {
     },
     title: {
         fontFamily: '"Gloria Hallelujah"',
-        fontSize: '2em'
+        fontSize: '2em',
+        lineHeight: '1.5em',
+        textAlign: 'center'
     }
 };
 
@@ -54,7 +56,7 @@ class Intro extends Component {
                 <Paper style={style.paperMain}>
                     <Paper style={style.paper}>
                         <div style={style.textHolder}>
-                            <h2 style={style.title}>Apart from front end technologies..</h2>
+                            <h2 style={style.title}>Apart from front end technologies...</h2>
                             <p>
                                 I practice and develop in backend technologies too. Think <span style={style.highlight}>NodeJS</span> (LoopBack), <span style={style.highlight}>PHP</span> (Lavarel, Cake, Slim), <span style={style.highlight}>Python</span> (Django, Flask). I experiment with new coding standards and techiques and update my <span style={style.highlight}>Github</span> repo consistently.
                             </p>

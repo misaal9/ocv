@@ -6,6 +6,7 @@ import { Link} from 'react-router';
 import {blue500} from 'material-ui/styles/colors';
 import IconButton from 'material-ui/IconButton';
 import NavigationMenu from 'material-ui/svg-icons/navigation/menu';
+import NavigationHome from 'material-ui/svg-icons/action/home';
 
 import _ from 'lodash';
 
@@ -55,6 +56,10 @@ class Header extends Component {
         }
     }
     
+    openHomePage() {
+        //console.info('PPSDS');
+    }
+    
     handleDrawerToggle() {
         this.setState({
             drawerOpen: !this.state.drawerOpen
@@ -83,9 +88,10 @@ class Header extends Component {
             <div>
                 <AppBar
                     style={style.appBar}
-                    iconClassNameRight="muidocs-icon-navigation-expand-more"
                     iconElementLeft={<IconButton><NavigationMenu color={blue500}/></IconButton>}
+                    iconElementRight={<IconButton><NavigationHome color={blue500}/></IconButton>}
                     onLeftIconButtonTouchTap={this.handleDrawerToggle.bind(this)}
+                    onRightIconButtonTouchTap={this.openHomePage.bind(this)}
                 />
                 <Drawer
                     width={400}
