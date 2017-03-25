@@ -8,7 +8,6 @@ const style = {
         flexDirection: 'column',
         justifyContent: 'space-around',
         alignItems: 'space-around',
-        background: '#002800',
         padding: '20px',
         height: '100vh',
         width: '100vw'
@@ -16,7 +15,6 @@ const style = {
     paper: {
         display: 'flex',
         background: 'none',
-        color: '#fff',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',

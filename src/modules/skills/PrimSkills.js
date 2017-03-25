@@ -13,7 +13,6 @@ const style = {
         flexDirection: 'column',
         justifyContent: 'center',
         alignContent: 'center',
-        background: '#002800',
         padding: '20px',
         height: '100vh',
         color: '#fff',
@@ -21,7 +20,6 @@ const style = {
     },
     chartHolder: {
         background: 'none',
-        color: '#fff',
         width: '100%',
         maxWidth: '768px',
         margin: '0 auto',
