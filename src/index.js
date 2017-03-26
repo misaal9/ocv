@@ -11,7 +11,9 @@ import Projects from './modules/projects/Projects';
 import Next from './modules/next/Next';
 import Contact from './modules/contact/Contact';
 import Work from './modules/work/Work';
-import ProjectDetails from './modules/work/companies/Details';
+import ProjectDetailsC1 from './modules/work/companies/Details_C1';
+import ProjectDetailsC2 from './modules/work/companies/Details_C2';
+import ProjectDetailsC3 from './modules/work/companies/Details_C3';
 import './index.css';
 
 injectTapEventPlugin();
@@ -27,7 +29,9 @@ ReactDOM.render(
             <Route path='/secSkills' component={SecSkills} />
             <Route path='/next' component={Next} />
             <Route path='/contact' component={Contact} />
-            <Route path='/projectDetails' component={ProjectDetails} />
+            <Route path='/projectDetailsC1' component={ProjectDetailsC1} />
+            <Route path='/projectDetailsC2' component={ProjectDetailsC2} />
+            <Route path='/projectDetailsC3' component={ProjectDetailsC3} />
         </Router>
     </MuiThemeProvider>
     ,

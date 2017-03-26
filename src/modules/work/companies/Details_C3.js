@@ -33,7 +33,7 @@ class Details extends Component {
                 <Header />
                 <Paper style={style.paperMain}>
                     <Paper style={style.paper}>
-                        Project Details come here
+                        Project Details QNST come here
                     </Paper>
                 </Paper>
             </div>

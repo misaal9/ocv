@@ -36,7 +36,8 @@ const workExp = [{
         title: 'Quinstreet',
         subTitle: '2015 - Present (~2 years)',
         content: 'Tata Consultancy Servies, or TCS, marked the beginning of my career. My initial days kept me busy with Java, however I soon began pursuing JavaScript related web developement roles.'
-    }
+    },
+    href: '/projectDetailsC3'
 },
 {
     id: 'sns',
@@ -45,7 +46,8 @@ const workExp = [{
         title: 'SNS Technologies (now ForgeAhead)',
         subTitle: '2013 - 2014 (2 years)',
         content: 'Tata Consultancy Servies, or TCS, marked the beginning of my career. My initial days kept me busy with Java, however I soon began pursuing JavaScript related web developement roles.'
-    }
+    },
+    href: '/projectDetailsC2'
 },
 {
     id: 'tcs',
@@ -54,7 +56,8 @@ const workExp = [{
         title: 'Tata Consultancy Services',
         subTitle: '2009 - 2013 (~4 years)',
         content: 'Tata Consultancy Servies, or TCS, marked the beginning of my career. My initial days kept me busy with Java, however I soon began pursuing JavaScript related web developement roles.'
-    }
+    },
+    href: '/projectDetailsC1'
 }];
 class Intro extends Component {
     
@@ -70,7 +73,7 @@ class Intro extends Component {
                 {this.state.workExp.map((work, i) => (
                     <Paper key={i} style={style.paperMain}>
                         <Paper style={style.paper}>
-                            <WorkExp title={work.text.title} subtitle={work.text.subTitle} imgLogo={work.img} content={work.text.content}/>
+                            <WorkExp title={work.text.title} subtitle={work.text.subTitle} imgLogo={work.img} content={work.text.content} href={work.href} />
                         </Paper>
                     </Paper>
                  ))}
