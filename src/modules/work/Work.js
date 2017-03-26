@@ -12,7 +12,8 @@ const style = {
         alignItems: 'space-around',
         padding: '20px',
         height: '100vh',
-        width: '100vw'
+        width: '100vw',
+        boxShadow: 'none'
     },
     paper: {
         display: 'flex',
@@ -34,8 +35,8 @@ const workExp = [{
     img: 'http://www.mhrenovate.com/samsclub2015/aboutus/images/Quinstreet-Logo.jpg',
     text: { 
         title: 'Quinstreet',
-        subTitle: '2015 - Present (~2 years)',
-        content: 'Tata Consultancy Servies, or TCS, marked the beginning of my career. My initial days kept me busy with Java, however I soon began pursuing JavaScript related web developement roles.'
+        subTitle: '2015 - Now (close to 2 years)',
+        content: 'Working with Quinstreet allowed me to further enhance my expertise in web development by taking on complex JavaScript projects that adhered to strict coding standards and practices.'
     },
     href: '/projectDetailsC3'
 },
@@ -44,8 +45,8 @@ const workExp = [{
     img: 'http://www.forgeahead.io/wp-content/uploads/2014/07/logo_desktop.png',
     text: { 
         title: 'SNS Technologies (now ForgeAhead)',
-        subTitle: '2013 - 2014 (2 years)',
-        content: 'Tata Consultancy Servies, or TCS, marked the beginning of my career. My initial days kept me busy with Java, however I soon began pursuing JavaScript related web developement roles.'
+        subTitle: '2013 - 2015 (2 years)',
+        content: 'SNS helped me deep dive into many JavaScript related roles and introduced me to numerous web related standards and technologies..'
     },
     href: '/projectDetailsC2'
 },
@@ -55,7 +56,7 @@ const workExp = [{
     text: { 
         title: 'Tata Consultancy Services',
         subTitle: '2009 - 2013 (~4 years)',
-        content: 'Tata Consultancy Servies, or TCS, marked the beginning of my career. My initial days kept me busy with Java, however I soon began pursuing JavaScript related web developement roles.'
+        content: 'Tata Consultancy Servies marked the beginning of my career. My initial days kept me busy with Java, however I soon began pursuing JavaScript related web developement roles.'
     },
     href: '/projectDetailsC1'
 }];

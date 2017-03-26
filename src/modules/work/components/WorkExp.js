@@ -28,34 +28,11 @@ const style = {
 const label = 'Show Project Details';
 
 class WorkExp extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            expand: false
-        }
-    }
-
-    handleExpandChange = (expanded) => {
-        this.setState({expand: expanded});
-    };
-
-    handleToggle = (event, toggle) => {
-        this.setState({expand: toggle});
-    };
-
-    handleExpand = () => {
-        this.setState({expand: true});
-    };
-
-    handleReduce = () => {
-        this.setState({expand: false});
-    };
-
     render() {
         return (
             <div>
-                <Card style={style.card} expanded={this.state.openSns} onExpandChange={this.handleExpandChange}>
-                    <CardHeader showExpandableButton={true} actAsExpander={true} />
+                <Card style={style.card}>
+                    <CardHeader />
                     <CardMedia style={style.cardMedia}>
                         <img role="presentation" style={style.img} src={this.props.imgLogo} />
                     </CardMedia>

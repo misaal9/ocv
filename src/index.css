@@ -9,3 +9,81 @@ body {
     font-family: 'Over the Rainbow', cursive;*/
     font-family: 'Give You Glory', cursive;
 }
+/* For proficiency chips */
+.skillChipsHolder .skillItem {
+    border: 1px solid #333;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 1px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.skillChipsHolder .skillItem h3 {
+    margin: 0;
+}
+
+.skillChipsHolder .skillItem.green800 {
+    background: #2E7D32
+}
+
+.skillChipsHolder .skillItem.green600 {
+    background: #43A047
+}
+
+.skillChipsHolder .skillItem.green400 {
+    background: #66BB6A
+}
+
+.skillChipsHolder .skillItem.green200 {
+    background: #A5D6A7
+}
+
+.skillChipsHolder .skillItem.green50 {
+    background: #E8F5E9
+}
+
+.skillChipsHolder .skillItem.lime200 {
+    background: #E6EE9C
+}
+
+.skillChipsHolder .skillItem.lime400 {
+    background: #D4E157
+}
+
+.skillChipsHolder .skillItem.lime600 {
+    background: #C0CA33
+}
+
+.skillChipsHolder .skillItem.lime800 {
+    background: #9E9D24
+}
+
+/* color range from  http://www.material-ui.com/#/customization/colors */
+/*
+green800 GREEN -- too bright
+#2E7D32
+
+green600 GREEN
+#43A047
+
+green400
+#66BB6A
+
+green200
+#A5D6A7
+
+green50 CENTER
+#E8F5E9
+
+lime200
+#E6EE9C
+
+lime400
+#D4E157
+
+lime600
+#C0CA33
+
+lime800 BAD
+#9E9D24
+*/

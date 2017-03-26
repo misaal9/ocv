@@ -58,7 +58,7 @@ class Intro extends Component {
                         <div style={style.textHolder}>
                             <h2 style={style.title}>Apart from front end technologies...</h2>
                             <p>
-                                I practice and develop in backend technologies too. Think <span style={style.highlight}>NodeJS</span> (LoopBack), <span style={style.highlight}>PHP</span> (Lavarel, Cake, Slim), <span style={style.highlight}>Python</span> (Django, Flask). I experiment with new coding standards and techiques and update my <span style={style.highlight}>Github</span> repo consistently.
+                                I practice and develop in backend technologies too. Think <span style={style.highlight}>NodeJS</span> (LoopBack), <span style={style.highlight}>PHP</span> (Lavarel, Cake, Slim), <span style={style.highlight}>Python</span> (Django, Flask). I experiment with new coding standards and techiques and update my <span style={style.highlight}>Github</span> consistently.
                             </p>
                             <p>
                                 I am active in mobile development, using Javacript frameworks. Think <span style={style.highlight}>React-Native</span> and <span style={style.highlight}>Native-Script</span> that leverages Javascript to build apps for iOS and Android.

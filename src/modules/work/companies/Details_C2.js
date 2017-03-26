@@ -3,6 +3,7 @@ import Header from '../../../modules/header/Header';
 import Paper from 'material-ui/Paper';
 import Chip from 'material-ui/Chip';
 import { Link} from 'react-router';
+import {yellow400} from 'material-ui/styles/colors';
 
 const style = {
     paperMain: {
@@ -65,8 +66,7 @@ class Details extends Component {
                 <Paper style={style.paperMain}>
                     <Paper style={style.paper}>
                         <h2 style={style.title}>SNS Technologies (now ForgeAhead)</h2>
-                        <h3 style={style.subTitle}>2013 - 2015 (2 years)</h3>
-        
+
                         <Paper style={style.project}>
                             <h3 style={style.projectH3}>Project, Client</h3>
                             CK-12 Foundation | <Link style={style.link} to="http://www.ck12.org/student/" target="_blank">www.ck12.org</Link>
@@ -80,7 +80,7 @@ class Details extends Component {
                             </ul>
                             <h3 style={style.projectH3}>Technology Stack</h3>
                             <div style={style.chipWrapper}>
-                                <Chip>jQuery Plugin</Chip> &nbsp; <Chip>Javascript</Chip>
+                                <Chip backgroundColor={yellow400}>jQuery Plugin</Chip> &nbsp; <Chip backgroundColor={yellow400}>Javascript</Chip>
                             </div>
                         </Paper>
         
@@ -97,7 +97,7 @@ class Details extends Component {
                             </ul>
                             <h3 style={style.projectH3}>Technology Stack</h3>
                             <div style={style.chipWrapper}>
-                                <Chip>AngularJS</Chip> &nbsp; <Chip>Bootstrap</Chip>
+                                <Chip backgroundColor={yellow400}>AngularJS</Chip> &nbsp; <Chip backgroundColor={yellow400}>Bootstrap</Chip>
                             </div>
                         </Paper>
         
@@ -116,7 +116,7 @@ class Details extends Component {
                             </ul>
                             <h3 style={style.projectH3}>Technology Stack</h3>
                             <div style={style.chipWrapper}>
-                                <Chip>BackboneJS</Chip> &nbsp; <Chip>jQuery</Chip> &nbsp; <Chip>Python</Chip> &nbsp; <Chip>MySQL</Chip>
+                                <Chip backgroundColor={yellow400}>BackboneJS</Chip> &nbsp; <Chip backgroundColor={yellow400}>jQuery</Chip> &nbsp; <Chip backgroundColor={yellow400}>Python</Chip> &nbsp; <Chip backgroundColor={yellow400}>MySQL</Chip>
                             </div>
                         </Paper>
         
@@ -135,7 +135,7 @@ class Details extends Component {
                             </ul>
                             <h3 style={style.projectH3}>Technology Stack</h3>
                             <div style={style.chipWrapper}>
-                                <Chip>Balsamiq</Chip> &nbsp; <Chip>Photoshop</Chip>
+                                <Chip backgroundColor={yellow400}>Balsamiq</Chip> &nbsp; <Chip backgroundColor={yellow400}>Photoshop</Chip>
                             </div>
                         </Paper>
         
@@ -153,7 +153,7 @@ class Details extends Component {
                             </ul>
                             <h3 style={style.projectH3}>Technology Stack</h3>
                             <div style={style.chipWrapper}>
-                                <Chip>BIRT</Chip> &nbsp; <Chip>jQuery</Chip>
+                                <Chip backgroundColor={yellow400}>BIRT</Chip> &nbsp; <Chip backgroundColor={yellow400}>jQuery</Chip>
                             </div>
                         </Paper>
         
@@ -172,7 +172,7 @@ class Details extends Component {
                             </ul>
                             <h3 style={style.projectH3}>Technology Stack</h3>
                             <div style={style.chipWrapper}>
-                                <Chip>Android Studio</Chip> &nbsp; <Chip>XCode</Chip> &nbsp; <Chip>Balsamiq</Chip> &nbsp; <Chip>Photoshop</Chip> &nbsp; <Chip>Javascript</Chip>
+                                <Chip backgroundColor={yellow400}>Android Studio</Chip> &nbsp; <Chip backgroundColor={yellow400}>XCode</Chip> &nbsp; <Chip backgroundColor={yellow400}>Balsamiq</Chip> &nbsp; <Chip backgroundColor={yellow400}>Photoshop</Chip> &nbsp; <Chip backgroundColor={yellow400}>Javascript</Chip>
                             </div>
                         </Paper>
                     
@@ -190,7 +190,7 @@ class Details extends Component {
                             </ul>
                             <h3 style={style.projectH3}>Technology Stack</h3>
                             <div style={style.chipWrapper}>
-                                <Chip>Javascript</Chip> &nbsp; <Chip>HTML</Chip> &nbsp; <Chip>CSS</Chip> &nbsp; <Chip>jQuery</Chip>
+                                <Chip backgroundColor={yellow400}>Javascript</Chip> &nbsp; <Chip backgroundColor={yellow400}>HTML</Chip> &nbsp; <Chip backgroundColor={yellow400}>CSS</Chip> &nbsp; <Chip backgroundColor={yellow400}>jQuery</Chip>
                             </div>
                         </Paper>
                     </Paper>

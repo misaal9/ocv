@@ -13,7 +13,8 @@ const style = {
         alignContent: 'center',
         padding: '20px',
         height: '100vh',
-        textAlign: 'center'
+        textAlign: 'center',
+        boxShadow: 'none'
     },
     chartHolder: {
         background: 'none',

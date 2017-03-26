@@ -35,6 +35,9 @@ const style = {
         fontSize: '2em',
         lineHeight: '1.5em',
         textAlign: 'center'
+    },
+    center: {
+        textAlign: 'center'
     }
 };
 class Intro extends Component {
@@ -46,16 +49,19 @@ class Intro extends Component {
                     <Paper style={style.paper}>
                         <img src={userIcon} style={style.userIcon} role="presentation" />
                         <h2 style={style.title}>Rohit</h2>
-                        <p>
-                            I'm a Mumbai-Pune based JavaScript developer. I specialise in FrontEnd technologies and frameworks,
-                            and have recently been exploring other options in Javascript as well. This includes not just backend,
-                            but also mobile apps, plugins and games using Javascript mostly.
-                        </p>
-                        <p>
-                            Apart from my interest in Javascript, I have an active intereset in UI design, analyse and better UX flows, 
-                            animations and 3D-modelling, designing 2D games and also exploring scope of Javascript in 
-                            hardware related programming.
-                        </p>
+                        <div style={style.center}>
+                            <p>
+                                I'm a Pune/ Mumbai based JavaScript developer, with an creative way of 
+                                visualizing UI and an excellent eye for detail. I specialise in FrontEnd technologies and frameworks,
+                                and have recently been exploring other open source options as well. This includes backend,
+                                mobile apps, plugins and games using JavaScript.
+                            </p>
+                            <p>
+                                Apart from my craze for web development, I have an active interest in UI/ UX design, 
+                                animations and 3D-modelling, designing 2D games and exploring scope of JavaScript in 
+                                hardware related programming.
+                            </p>
+                        </div>
                     </Paper>
                 </Paper>
             </div>
