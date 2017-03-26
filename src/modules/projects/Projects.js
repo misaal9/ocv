@@ -83,7 +83,7 @@ class Intro extends Component {
                     <Paper style={style.paper}>
                         <Card>
                             <CardMedia
-                                  overlay={<CardTitle title="Travel Planner And Collaborator" subtitle="https://misaal9.github.io/react-planner" />}
+                                  overlay={<CardTitle title="Travel Collaborator" subtitle="https://misaal9.github.io/react-planner" />}
                                 >
                                   <img src={img.p2} role="presentation" />
                             </CardMedia>

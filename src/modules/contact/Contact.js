@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Header from '../../modules/header/Header';
 import Paper from 'material-ui/Paper';
-import TextField from 'material-ui/TextField';
-import RaisedButton from 'material-ui/RaisedButton';
-
+import FontAwesome from 'react-fontawesome';
+import {Link} from 'react-router';
+import {blue500} from 'material-ui/styles/colors'
 /*
 import FA from 'react-fontawesome';
 import FontIcon from 'material-ui/FontIcon';
@@ -39,6 +39,14 @@ const style = {
         fontSize: '2em',
         textAlign: 'center',
         lineHeight: '1.5em'
+    },
+    socials: {
+        display: 'flex',
+        flexWrap: 'wrap'
+    },
+    socialLink: {
+        color: '#2196f3',
+        margin: '2vw 3vw'
     }
 };
 class Intro extends Component {
@@ -49,16 +57,37 @@ class Intro extends Component {
                 <Paper style={style.paperMain}>
                     <Paper style={style.paper}>
                         <h2 style={style.title}>Looking To Get In Touch?</h2>
-                        <TextField
-                            hintText='Enter your name'
-                            fullWidth={true}
-                        />
-                        <TextField
-                            hintText='Enter your email'
-                            fullWidth={true}
-                        />
-                        <p>&nbsp;</p>
-                        <RaisedButton label='Submit' primary={true} fullWidth={true} />
+                        <div style={style.socials}>
+                            <Link to="https://www.github.com/misaal9" target="_blank">
+                                <FontAwesome 
+                                    name='github'
+                                    style={style.socialLink}
+                                    size='2x'
+                                />
+                            </Link>
+                            <Link to="https://www.facebook.com/misaal9" target="_blank">
+                                <FontAwesome 
+                                    color={blue500}
+                                    style={style.socialLink}
+                                    name='facebook'
+                                    size='2x'
+                                />
+                            </Link>
+                            <Link to="https://www.twitter.com/misaal9" target="_blank">
+                                <FontAwesome 
+                                    name='twitter'
+                                    style={style.socialLink}
+                                    size='2x'
+                                />
+                            </Link>
+                            <Link to="mailto:misaal9@gmail.com" target="_blank">
+                                <FontAwesome 
+                                    name='envelope'
+                                    style={style.socialLink}
+                                    size='2x'
+                                />
+                            </Link>
+                        </div>
                     </Paper>
                 </Paper>
             </div>
