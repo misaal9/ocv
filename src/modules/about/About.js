@@ -51,8 +51,8 @@ class Intro extends Component {
                         <h2 style={style.title}>Rohit</h2>
                         <div style={style.center}>
                             <p>
-                                I'm a Pune/ Mumbai based JavaScript developer, with an creative way of 
-                                visualizing UI and an excellent eye for detail. I specialise in FrontEnd technologies and frameworks,
+                                I'm a self taught JavaScript developer based out of Pune/ Mumbai, who loves working with open source tecnologies.
+                                I have an intuitive way of visualizing UI and an excellent eye for detail. I specialise in FrontEnd technologies and frameworks,
                                 and have recently been exploring other open source options as well. This includes backend,
                                 mobile apps, plugins and games using JavaScript.
                             </p>

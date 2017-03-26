@@ -7,6 +7,7 @@ import {blue500} from 'material-ui/styles/colors';
 import IconButton from 'material-ui/IconButton';
 import NavigationMenu from 'material-ui/svg-icons/navigation/menu';
 import NavigationHome from 'material-ui/svg-icons/action/home';
+import {browserHistory} from 'react-router';
 
 import _ from 'lodash';
 
@@ -57,8 +58,7 @@ class Header extends Component {
     }
     
     openHomePage() {
-        //console.info('PPSDS');
-        console.info(this.props);
+        browserHistory.push('/');
     }
     
     handleDrawerToggle() {

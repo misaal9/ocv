@@ -177,6 +177,21 @@ class Details extends Component {
                 </Paper>
                 <Paper style={style.paperMain}>
                     <Paper style={style.chartHolder}>
+                        <h2 style={style.title}>Visualization & Graphs</h2>
+                        <div style={style.chipHolder}>
+                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green200} label="Google Charts"/>
+                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green200} label="Highcharts"/>
+                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green200} label="D3JS"/>
+                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green50} label="Datatables Plugin"/>
+                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green50} label="SVG"/>
+                        </div>
+                        <div>
+                            <NavigationScrollDown />
+                        </div>
+                    </Paper>
+                </Paper>
+                <Paper style={style.paperMain}>
+                    <Paper style={style.chartHolder}>
                         <h2 style={style.title}>IDE</h2>
                         <div style={style.chipHolder}>
                             <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green50} label="Android Studio"/>
