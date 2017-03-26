@@ -22,7 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://misaal9.github.io/react-charts"
+  "homepage": "https://misaal9.github.io/react-charts"
 }
