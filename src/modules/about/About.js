@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from '../../modules/header/Header';
 import Paper from 'material-ui/Paper';
 
-const userIcon = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Antu_im-kick-user.svg/2000px-Antu_im-kick-user.svg.png';
+/*const userIcon = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Antu_im-kick-user.svg/2000px-Antu_im-kick-user.svg.png';*/
 
 const style = {
     paperMain: {
@@ -47,18 +47,18 @@ class Intro extends Component {
                 <Header />
                 <Paper style={style.paperMain}>
                     <Paper style={style.paper}>
-                        <img src={userIcon} style={style.userIcon} role="presentation" />
-                        <h2 style={style.title}>Rohit</h2>
+                        {/*<img src={userIcon} style={style.userIcon} role="presentation" />*/}
+                        <h2 style={style.title}>About Me</h2>
                         <div style={style.center}>
                             <p>
                                 I'm a self taught JavaScript developer based out of Pune/ Mumbai, who loves working with open source tecnologies.
-                                I love to make creative UI and have an excellent eye for detail. I specialise in FrontEnd technologies
-                                and have recently been exploring options in backend,
+                                I make creative UI and have an excellent eye for detail. I specialise in FrontEnd technologies
+                                and have been exploring in backend,
                                 mobile apps, plugins and games using JavaScript.
                             </p>
                             <p>
-                                My other interests lie in UI/ UX design, 
-                                animations and 3D-modelling, designing 2D games and exploring scope of JavaScript in 
+                                My other interests lie in UI/ UX designs, 
+                                animations and 3D-modelling, designing 2D games and exploring JavaScript in 
                                 hardware related programming.
                             </p>
                         </div>

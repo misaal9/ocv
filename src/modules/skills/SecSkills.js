@@ -51,8 +51,8 @@ class Details extends Component {
                 <Header />
                 <Paper style={style.paperMain}>
                     <Paper style={style.chartHolder}>
-                        <h2 style={style.title}>Summary Of skills</h2>
-                        <p>Since JavaScript already uses way too many tools and libraries, it would make more sense to classify them visually based on my level of proficiency. Such as,  </p>
+                        <h2 style={style.title}>Skill Summary</h2>
+                        <p>I've classified my skills visually based on my level of proficiency. Such as,  </p>
                         <div style={style.chipHolder}>
                             <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green400} label="Confident"/>
                             <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green200} label="Somewhat Confident"/>
@@ -83,7 +83,7 @@ class Details extends Component {
                 </Paper>
                 <Paper style={style.paperMain}>
                     <Paper style={style.chartHolder}>
-                        <h2 style={style.title}>Utility, Automation, Build, Module Dependency Management</h2>
+                        <h2 style={style.title}>Utility, Build Management</h2>
                         <div style={style.chipHolder}>
                             <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green400} label="RequireJS"/>
                             <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green400} label="Lodash"/>
@@ -233,7 +233,7 @@ class Details extends Component {
                 </Paper>
                 <Paper style={style.paperMain}>
                     <Paper style={style.chartHolder}>
-                        <h2 style={style.title}>Transpilers & Mobile Apps With Modern Javascript</h2>
+                        <h2 style={style.title}>Modern Javascript</h2>
                         <div style={style.chipHolder}>
                             <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green200} label="ES6"/>
                             <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green200} label="Webpack"/>

@@ -10,7 +10,8 @@ const style = {
         alignItems: 'space-around',
         padding: '20px',
         height: '100vh',
-        width: '100vw'
+        width: '100vw',
+        boxShadow: 'none'
     },
     paper: {
         display: 'flex',
@@ -56,21 +57,21 @@ class Intro extends Component {
                 <Paper style={style.paperMain}>
                     <Paper style={style.paper}>
                         <div style={style.textHolder}>
-                            <h2 style={style.title}>Apart from front end technologies...</h2>
+                            <h2 style={style.title}>Apart from front end...</h2>
                             <p>
-                                I practice and develop in backend technologies too. Think <span style={style.highlight}>NodeJS</span> (LoopBack), <span style={style.highlight}>PHP</span> (Lavarel, Cake, Slim), <span style={style.highlight}>Python</span> (Django, Flask). I experiment with new coding standards and techiques and update my <span style={style.highlight}>Github</span> consistently.
+                                I've worked with backend technologies. Think <span style={style.highlight}>NodeJS</span> (LoopBack), <span style={style.highlight}>PHP</span> (Lavarel, Cake), <span style={style.highlight}>Python</span> (Django, Flask). I update my <span style={style.highlight}>Github</span> consistently.
                             </p>
                             <p>
-                                I am active in mobile development, using Javacript frameworks. Think <span style={style.highlight}>React-Native</span> and <span style={style.highlight}>Native-Script</span> that leverages Javascript to build apps for iOS and Android.
+                                I've used <span style={style.highlight}>React-Native</span> and <span style={style.highlight}>Native-Script</span> that leverages Javascript to build apps for iOS and Android.
                             </p>
                             <p>
-                                I have explored 2D games for mobile. I have worked with <span style={style.highlight}>Unity3D</span> to develop this. Not just for mobiles, but PC games too. I have an active interest in 3D modelling using <span style={style.highlight}>Blender</span>.
+                                I've studied <span style={style.highlight}>Unity3D</span>, <span style={style.highlight}>Blender</span> to develop simple games and 3D models.
                             </p>
                             <p>
-                                Windows and iOS apps using Javascript frameworks (again). Think <span style={style.highlight}>ElectronJS</span>, similar. 
+                                I've tried <span style={style.highlight}>ElectronJS</span> to make desktop applications. 
                             </p>
                             <p>
-                                Progress in the field of Augmented Reality has caught my attention and I have been reading the latest on AR developement. Think <span style={style.highlight}>Zappar</span>, <span style={style.highlight}>Augment</span>.
+                                For Augmented Reality, I am looking at tutorials, and tools such as <span style={style.highlight}>Zappar</span>, <span style={style.highlight}>Augment</span>.
                             </p>
                         </div>
                     </Paper>
