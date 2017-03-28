@@ -63,6 +63,9 @@ const style = {
         marginTop: '30px',
         marginLeft: '-20px',
         background: 'lightyellow'
+    },
+    chipItem: {
+        marginBottom: '5px'
     }
 };
 class Details extends Component {
@@ -89,11 +92,11 @@ class Details extends Component {
                             </ul>
                             <h3 style={style.projectH3}>Technology Stack</h3>
                             <div style={style.chipWrapper}>
-                                <Chip backgroundColor={yellow400}>jQuery Plugin</Chip> &nbsp; 
-                                <Chip backgroundColor={yellow400}>Javascript</Chip> &nbsp;
-                                <Chip backgroundColor={yellow400}>HTML</Chip> &nbsp;
-                                <Chip backgroundColor={yellow400}>CSS</Chip> &nbsp;
-                                <Chip backgroundColor={yellow400}>Flash devices</Chip> &nbsp;
+                                <Chip style={style.chipItem} backgroundColor={yellow400}>jQuery Plugin</Chip> &nbsp; 
+                                <Chip style={style.chipItem} backgroundColor={yellow400}>Javascript</Chip> &nbsp;
+                                <Chip style={style.chipItem} backgroundColor={yellow400}>HTML</Chip> &nbsp;
+                                <Chip style={style.chipItem} backgroundColor={yellow400}>CSS</Chip> &nbsp;
+                                <Chip style={style.chipItem} backgroundColor={yellow400}>Flash devices</Chip> &nbsp;
                             </div>
                         </Paper>
         
@@ -112,12 +115,12 @@ class Details extends Component {
                             </ul>
                             <h3 style={style.projectH3}>Technology Stack</h3>
                             <div style={style.chipWrapper}>
-                                <Chip backgroundColor={yellow400}>.Net</Chip> &nbsp; 
-                                <Chip backgroundColor={yellow400}>C#</Chip> &nbsp;
-                                <Chip backgroundColor={yellow400}>XHTML</Chip> &nbsp;
-                                <Chip backgroundColor={yellow400}>InfoPath</Chip> &nbsp;
-                                <Chip backgroundColor={yellow400}>TFS</Chip> &nbsp;
-                                <Chip backgroundColor={yellow400}>Javascript</Chip> &nbsp;
+                                <Chip style={style.chipItem} backgroundColor={yellow400}>.Net</Chip> &nbsp; 
+                                <Chip style={style.chipItem} backgroundColor={yellow400}>C#</Chip> &nbsp;
+                                <Chip style={style.chipItem} backgroundColor={yellow400}>XHTML</Chip> &nbsp;
+                                <Chip style={style.chipItem} backgroundColor={yellow400}>InfoPath</Chip> &nbsp;
+                                <Chip style={style.chipItem} backgroundColor={yellow400}>TFS</Chip> &nbsp;
+                                <Chip style={style.chipItem} backgroundColor={yellow400}>Javascript</Chip> &nbsp;
                             </div>
                         </Paper>
         

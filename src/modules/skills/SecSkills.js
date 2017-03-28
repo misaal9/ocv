@@ -51,7 +51,7 @@ class Details extends Component {
                 <Header />
                 <Paper style={style.paperMain}>
                     <Paper style={style.chartHolder}>
-                        <h2 style={style.title}>Summary Of skill set</h2>
+                        <h2 style={style.title}>Summary Of skills</h2>
                         <p>Since JavaScript already uses way too many tools and libraries, it would make more sense to classify them visually based on my level of proficiency. Such as,  </p>
                         <div style={style.chipHolder}>
                             <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green400} label="Confident"/>
@@ -252,14 +252,12 @@ class Details extends Component {
                     <Paper style={style.chartHolder}>
                         <h2 style={style.title}>Spare Time Shenanigans</h2>
                         <div style={style.chipHolder}>
-                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={yellow300} label="Unity3D Game Development"/>
-                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={yellow300} label="Blender 3D MODELLING"/>
+                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={yellow300} label="Unity3D"/>
+                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={yellow300} label="Blender"/>
                             <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={yellow300} label="Augmented Reality"/>
                             <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={yellow300} label="AI"/>
-                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={yellow300} label="Machine Learning"/>
                             <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={yellow300} label="Raspberry Pi"/>
                             <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={yellow300} label="Machine Learning"/>
-                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={yellow300} label="Desktop Applications In Javascript"/>
                             <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={yellow300} label="ElectronJS"/>
                             <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={yellow300} label="Internet Of Things"/>
                         </div>

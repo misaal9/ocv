@@ -56,6 +56,9 @@ const style = {
     icon: {
         fill: '#ccc',
         height: '1em'
+    },
+    chipItem: {
+        marginBottom: '5px'
     }
 };
 class Details extends Component {
@@ -82,8 +85,8 @@ class Details extends Component {
                             </ul>
                             <h3 style={style.projectH3}>Technology Stack</h3>
                             <div style={style.chipWrapper}>
-                                <Chip backgroundColor={yellow400}>DurandalJS</Chip> &nbsp; <Chip backgroundColor={yellow400}>KnockoutJS</Chip> &nbsp; <Chip backgroundColor={yellow400}>GulpJS</Chip>
-                                &nbsp; <Chip backgroundColor={yellow400}>SCSS</Chip> &nbsp; <Chip backgroundColor={yellow400}>Lodash</Chip>
+                                <Chip style={style.chipItem} backgroundColor={yellow400}>DurandalJS</Chip> &nbsp; <Chip style={style.chipItem} backgroundColor={yellow400}>KnockoutJS</Chip> &nbsp; <Chip style={style.chipItem} backgroundColor={yellow400}>GulpJS</Chip>
+                                &nbsp; <Chip style={style.chipItem} backgroundColor={yellow400}>SCSS</Chip> &nbsp; <Chip style={style.chipItem} backgroundColor={yellow400}>Lodash</Chip>
                             </div>
                         </Paper>
                     </Paper>

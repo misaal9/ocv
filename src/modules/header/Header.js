@@ -13,7 +13,7 @@ import _ from 'lodash';
 
 const style = {
     appBar: {
-        background: '#fff',
+        background: 'transparent',
         position: 'fixed',
         top: 0,
         color: '#ccc',

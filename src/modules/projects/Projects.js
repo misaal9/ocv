@@ -52,6 +52,9 @@ const style = {
     chipHolder: {
         display: 'flex',
         flexWrap: 'wrap'
+    },
+    chipItem: {
+        marginBottom: '5px'
     }
 };
 class Intro extends Component {
@@ -71,10 +74,10 @@ class Intro extends Component {
                                 This wedding website was made using <span style={style.blue}>KnockoutJS</span> and <span style={style.blue}>DurandalJS</span> and is currently live. The site has a go-to-map which allows user to locate venue through your maps directly. It leverages basic CSS to implement a night mode feature.
                             </CardText>
                             <CardText>
-                                <div style={style.chipHolder}><Chip backgroundColor={yellow400}>KnockoutJS</Chip> &nbsp; <Chip backgroundColor={yellow400}>DurandalJS</Chip></div>
+                                <div style={style.chipHolder}><Chip style={style.chipItem} backgroundColor={yellow400}>KnockoutJS</Chip> &nbsp; <Chip style={style.chipItem} backgroundColor={yellow400}>DurandalJS</Chip></div>
                             </CardText>
                             <CardActions>
-                                <RaisedButton primary={true} href="http://rohitandmadhura.com" target="_blank" label="Visit page in new tab" />
+                                <RaisedButton fullWidth={true} primary={true} href="http://rohitandmadhura.com" target="_blank" label="Visit page in new tab" />
                             </CardActions>
                         </Card>
                     </Paper>
@@ -91,10 +94,10 @@ class Intro extends Component {
                                 This application is made using <span style={style.blue}>ReactJS</span> (for a clean, crisp UI) and <span style={style.blue}>Firebase</span> (to store data, Google authentication). This app is targeted for a group that is trying to plan a trip together by collaborating ideas, locations and communication. This project is currently work in progress.
                             </CardText>
                             <CardText>
-                                <div style={style.chipHolder}><Chip backgroundColor={yellow400}>ReactJS</Chip> &nbsp; <Chip backgroundColor={yellow400}>Firebase</Chip></div>
+                                <div style={style.chipHolder}><Chip style={style.chipItem} backgroundColor={yellow400}>ReactJS</Chip> &nbsp; <Chip style={style.chipItem} backgroundColor={yellow400}>Firebase</Chip></div>
                             </CardText>
                             <CardActions>
-                                <RaisedButton primary={true} href="https://misaal9.github.io/react-planner" target="_blank" label="Visit page in new tab" />
+                                <RaisedButton fullWidth={true} primary={true} href="https://misaal9.github.io/react-planner" target="_blank" label="Visit page in new tab" />
                             </CardActions>
                         </Card>
                     </Paper>
@@ -111,10 +114,10 @@ class Intro extends Component {
                                 This project uses <span style={style.blue}>ReactJS</span> and <span style={style.blue}>Google Charts</span> to render graphs and provide visual information for a candidate's resume. This is the project you are viewing right now.
                             </CardText>
                             <CardText>
-                                <div style={style.chipHolder}><Chip backgroundColor={yellow400}>ReactJS</Chip> &nbsp; <Chip backgroundColor={yellow400}>Google Charts</Chip></div>
+                                <div style={style.chipHolder}><Chip style={style.chipItem} backgroundColor={yellow400}>ReactJS</Chip> &nbsp; <Chip style={style.chipItem} backgroundColor={yellow400}>Google Charts</Chip></div>
                             </CardText>
                             <CardActions>
-                                <RaisedButton primary={true} href="https://misaal9.github.io/react-charts" target="_blank" label="Visit page in new tab" />
+                                <RaisedButton fullWidth={true} primary={true} href="https://misaal9.github.io/react-charts" target="_blank" label="Visit page in new tab" />
                             </CardActions>
                         </Card>
                     </Paper>
@@ -129,7 +132,7 @@ class Intro extends Component {
                                 You can also visit my <span style={style.blue}>Github</span>, where I consistently update when I'm trying out new coding standards and frameworks. Some projects are still work in progress, though.
                             </CardText>
                             <CardActions>
-                                <RaisedButton primary={true} href="https://github.com/misaal9" target="_blank" label="Visit page in new tab" />
+                                <RaisedButton fullWidth={true} primary={true} href="https://github.com/misaal9" target="_blank" label="Visit page in new tab" />
                             </CardActions>
                         </Card>
                     </Paper>

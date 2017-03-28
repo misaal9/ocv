@@ -52,12 +52,12 @@ class Intro extends Component {
                         <div style={style.center}>
                             <p>
                                 I'm a self taught JavaScript developer based out of Pune/ Mumbai, who loves working with open source tecnologies.
-                                I have an intuitive way of visualizing UI and an excellent eye for detail. I specialise in FrontEnd technologies and frameworks,
-                                and have recently been exploring other open source options as well. This includes backend,
+                                I love to make creative UI and have an excellent eye for detail. I specialise in FrontEnd technologies
+                                and have recently been exploring options in backend,
                                 mobile apps, plugins and games using JavaScript.
                             </p>
                             <p>
-                                Apart from my craze for web development, I have an active interest in UI/ UX design, 
+                                My other interests lie in UI/ UX design, 
                                 animations and 3D-modelling, designing 2D games and exploring scope of JavaScript in 
                                 hardware related programming.
                             </p>
