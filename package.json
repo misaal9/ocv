@@ -25,5 +25,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://misaal9.github.io/react-charts"
+  "homepage": "https://misaal9.github.io/ocv"
 }

@@ -106,18 +106,18 @@ class Intro extends Component {
                     <Paper style={style.paper}>
                         <Card>
                             <CardMedia
-                                  overlay={<CardTitle title="Online Resume" subtitle="https://misaal9.github.io/react-charts" />}
+                                  overlay={<CardTitle title="Online Resume" subtitle="https://misaal9.github.io/ocv" />}
                                 >
                                   <img src={img.p3} role="presentation" />
                             </CardMedia>
                             <CardText>
-                                This project uses <span style={style.blue}>ReactJS</span> and <span style={style.blue}>Google Charts</span> to render graphs and provide visual information for a candidate's resume. This is the project you are viewing right now.
+                                An online resume using <span style={style.blue}>ReactJS</span>. This is the project you are viewing right now.
                             </CardText>
                             <CardText>
-                                <div style={style.chipHolder}><Chip style={style.chipItem} backgroundColor={yellow400}>ReactJS</Chip> &nbsp; <Chip style={style.chipItem} backgroundColor={yellow400}>Google Charts</Chip></div>
+                                <div style={style.chipHolder}><Chip style={style.chipItem} backgroundColor={yellow400}>ReactJS</Chip></div>
                             </CardText>
                             <CardActions>
-                                <RaisedButton fullWidth={true} primary={true} href="https://misaal9.github.io/react-charts" target="_blank" label="Visit page in new tab" />
+                                <RaisedButton fullWidth={true} primary={true} href="https://misaal9.github.io/ocv" target="_blank" label="Visit page in new tab" />
                             </CardActions>
                         </Card>
                     </Paper>
