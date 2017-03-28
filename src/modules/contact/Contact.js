@@ -58,14 +58,14 @@ class Intro extends Component {
                     <Paper style={style.paper}>
                         <h2 style={style.title}>Looking To Get In Touch?</h2>
                         <div style={style.socials}>
-                            <Link to="https://www.github.com/misaal9" target="_blank">
+                            <Link href="https://www.github.com/misaal9" target="_blank">
                                 <FontAwesome 
                                     name='github'
                                     style={style.socialLink}
                                     size='2x'
                                 />
                             </Link>
-                            <Link to="https://www.facebook.com/misaal9" target="_blank">
+                            <Link href="https://www.facebook.com/misaal9" target="_blank">
                                 <FontAwesome 
                                     color={blue500}
                                     style={style.socialLink}
@@ -73,14 +73,14 @@ class Intro extends Component {
                                     size='2x'
                                 />
                             </Link>
-                            <Link to="https://www.twitter.com/misaal9" target="_blank">
+                            <Link href="https://www.twitter.com/misaal9" target="_blank">
                                 <FontAwesome 
                                     name='twitter'
                                     style={style.socialLink}
                                     size='2x'
                                 />
                             </Link>
-                            <Link to="mailto:misaal9@gmail.com" target="_blank">
+                            <Link href="mailto:misaal9@gmail.com" target="_blank">
                                 <FontAwesome 
                                     name='envelope'
                                     style={style.socialLink}

@@ -74,7 +74,7 @@ class Details extends Component {
                             <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green400} label="ReactJS"/>
                             <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green200} label="AngularJS 1.x"/>
                             <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green50} label="BackboneJS"/>
-                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={lime50} label="AngularJS 2.0"/>
+                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={lime50} label="AngularJS 2.x"/>
                         </div>
                         <div>
                             <NavigationScrollDown />
@@ -95,8 +95,21 @@ class Details extends Component {
                             <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green200} label="KnockoutJS"/>
                             <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green50} label="Underscore"/>
                             <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={lime200} label="Bower"/>
-                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={lime400} label="Yelp"/>
                             
+                        </div>
+                        <div>
+                            <NavigationScrollDown />
+                        </div>
+                    </Paper>
+                </Paper>
+                <Paper style={style.paperMain}>
+                    <Paper style={style.chartHolder}>
+                        <h2 style={style.title}>UI Frameworks</h2>
+                        <div style={style.chipHolder}>
+                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green400} label="Bootstrap v3"/>
+                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green400} label="Material UI"/>
+                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green50} label="Bootstrap v4"/>                            
+                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={lime200} label="Foundation"/>
                         </div>
                         <div>
                             <NavigationScrollDown />

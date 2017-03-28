@@ -74,7 +74,7 @@ class Intro extends Component {
                                 <div style={style.chipHolder}><Chip backgroundColor={yellow400}>KnockoutJS</Chip> &nbsp; <Chip backgroundColor={yellow400}>DurandalJS</Chip></div>
                             </CardText>
                             <CardActions>
-                                <RaisedButton primary={true} href="https://rohitandmadhura.com" target="_blank" label="Visit page in new tab" />
+                                <RaisedButton primary={true} href="http://rohitandmadhura.com" target="_blank" label="Visit page in new tab" />
                             </CardActions>
                         </Card>
                     </Paper>

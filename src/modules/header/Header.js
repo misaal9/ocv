@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
-import { Link} from 'react-router';
+import {Link} from 'react-router';
 import {blue500} from 'material-ui/styles/colors';
 import IconButton from 'material-ui/IconButton';
 import NavigationMenu from 'material-ui/svg-icons/navigation/menu';
 import NavigationHome from 'material-ui/svg-icons/action/home';
-import {browserHistory} from 'react-router';
+import {hashHistory} from 'react-router';
 
 import _ from 'lodash';
 
@@ -58,7 +58,7 @@ class Header extends Component {
     }
     
     openHomePage() {
-        browserHistory.push('/');
+        hashHistory.push('/');
     }
     
     handleDrawerToggle() {
@@ -73,10 +73,10 @@ class Header extends Component {
                 {/*eslint-disable react/jsx-no-duplicate-props*/}
                 <Link style={style.link} to='/'><MenuItem style={style.menuItem}>Home Page</MenuItem></Link>
                 <Link style={style.link} to='/about'><MenuItem style={style.menuItem}>About Me</MenuItem></Link>
+                <Link style={style.link} to='/secSkills'><MenuItem style={style.menuItem}>Summary Of All SKills</MenuItem></Link>
                 <Link style={style.link} to='/projects'><MenuItem style={style.menuItem}>Projects</MenuItem></Link>
                 <Link style={style.link} to='/work'><MenuItem style={style.menuItem}>Past Work Experience</MenuItem></Link>
-                <Link style={style.link} to='/primSkills'><MenuItem style={style.menuItem}>Primary SKills *</MenuItem></Link>
-                <Link style={style.link} to='/secSkills'><MenuItem style={style.menuItem}>Summary Of All SKills</MenuItem></Link>
+                {/*<Link style={style.link} to='/primSkills'><MenuItem style={style.menuItem}>Primary SKills *</MenuItem></Link>*/}
                 <Link style={style.link} to='/next'><MenuItem style={style.menuItem}>Other Interests</MenuItem></Link>
                 <Link style={style.link} to='/contact'><MenuItem style={style.menuItem}>Contact Me</MenuItem></Link>
                 {this.props.children}

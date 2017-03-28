@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Card, CardHeader, CardMedia, CardText, CardActions, CardTitle} from 'material-ui/Card';
 import RaisedButton from 'material-ui/RaisedButton';
+import {Link} from 'react-router';
 
 const style = {
     wrapper: {
@@ -41,7 +42,7 @@ class WorkExp extends Component {
                         {this.props.content}
                     </CardText>
                     <CardActions>
-                        <RaisedButton href={this.props.href} primary={true} fullWidth={true} label={label} />
+                        <Link to={this.props.href}><RaisedButton primary={true} fullWidth={true} label={label} /></Link>
                     </CardActions>
                 </Card>
             </div>
