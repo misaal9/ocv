@@ -51,10 +51,9 @@ class Intro extends Component {
                         <h2 style={style.title}>About Me</h2>
                         <div style={style.center}>
                             <p>
-                                I'm a self taught JavaScript developer based out of Pune/ Mumbai, who loves working with open source tecnologies.
+                                I'm a self taught JavaScript developer based out of Pune/ Mumbai, who loves working with open source technologies.
                                 I make creative UI and have an excellent eye for detail. I specialise in FrontEnd technologies
-                                and have been exploring in backend,
-                                mobile apps, plugins and games using JavaScript.
+                                and have worked on backend technologies too such as Node, PHP.
                             </p>
                             <p>
                                 My other interests lie in UI/ UX designs, 
