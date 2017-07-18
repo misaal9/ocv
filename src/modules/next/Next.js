@@ -59,16 +59,13 @@ class Intro extends Component {
                         <div style={style.textHolder}>
                             <h2 style={style.title}>Apart from front end...</h2>
                             <p>
-                                I've worked with backend technologies. Think <span style={style.highlight}>NodeJS</span> (LoopBack), <span style={style.highlight}>PHP</span> (Lavarel, Cake), <span style={style.highlight}>Python</span> (Django, Flask). I update my <span style={style.highlight}>Github</span> consistently.
+                                I'm learning <span style={style.highlight}>React-Native</span> and <span style={style.highlight}>ElectronJS</span> to build mobile, desktop applications.
                             </p>
                             <p>
-                                I've used <span style={style.highlight}>React-Native</span> and <span style={style.highlight}>Native-Script</span> that leverages Javascript to build apps for iOS and Android.
+                              I make applications using <span style={style.highlight}>MEAN</span> and <span style={style.highlight}>MERN</span> stack.
                             </p>
                             <p>
-                                I've studied <span style={style.highlight}>Unity3D</span>, <span style={style.highlight}>Blender</span> to develop simple games and 3D models.
-                            </p>
-                            <p>
-                                I've tried <span style={style.highlight}>ElectronJS</span> to make desktop applications. 
+                              I update my <span style={style.highlight}>Github</span> consistently with self-learning projects in <span style={style.highlight}>NodeJS</span>, <span style={style.highlight}>Firebase</span>, etc.
                             </p>
                             <p>
                                 For Augmented Reality, I am looking at tutorials, and tools such as <span style={style.highlight}>Zappar</span>, <span style={style.highlight}>Augment</span>.
