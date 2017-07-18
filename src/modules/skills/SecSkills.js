@@ -90,11 +90,11 @@ class Details extends Component {
                           <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green400} label="ES6"/>
                           <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green400} label="Promises"/>
                           <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green400} label="RequireJS"/>
+                          <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green400} label="RegEx"/>
                           <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green400} label="Lodash"/>
                           <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green200} label="KnockoutJS"/>
                           <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green200} label="Gulp"/>
                           <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green200} label="NPM"/>
-                          <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green200} label="RegEx"/>
                         </div>
                         <div>
                             <NavigationScrollDown />
@@ -135,12 +135,12 @@ class Details extends Component {
                     <Paper style={style.chartHolder}>
                         <h2 style={style.title}>Modern Javascript</h2>
                         <div style={style.chipHolder}>
-                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green200} label="ES6"/>
-                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green200} label="Webpack 2"/>
-                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={lime50} label="Babel"/>
-                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={lime50} label="React Native"/>
-                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={lime50} label="Electron JS"/>
-                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={lime400} label="TypeScript"/>
+                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green400} label="ES6"/>
+                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green400} label="Webpack 2"/>
+                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green400} label="Babel"/>
+                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green200} label="React Native"/>
+                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green200} label="Electron JS"/>
+                            <RaisedButton style={style.buttonStyle} overlayStyle={style.noClick} backgroundColor={green50} label="TypeScript"/>
                         </div>
                         <div>
                             <NavigationScrollDown />
